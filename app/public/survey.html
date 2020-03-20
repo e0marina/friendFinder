@@ -4,6 +4,175 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Friend Finder Survey Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+      </div>
+    </div>
+
+    <!-- page content  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-10">
+          <div class="page-header">
+            <h2>Survey Questions</h2>
+          </div>
+          <div class="page-sub-header"><h4>About you</h4></div>
+          <form>
+            <div class="form-group">
+              <label for="name">Name (Required)</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="link-to-image">Link to photo image (required)</label>
+              <input type="text" class="form-control" id="link-to-image" />
+            </div>
+            <div class="question">
+              <h5>1. You derive energy from being around other people.</h5>
+              <select class="form-control form-control-sm">
+                <option>select an option</option>
+                <option>5-strongly agree</option>
+                <option>4-</option>
+                <option>3-</option>
+                <option>2-</option>
+                <option>1-strongly disagree</option>
+              </select>
+            </div>
+            <div class="question">
+              <h5>
+                2. You think you'd like to live in your current city for the
+                next 10 years.
+              </h5>
+              <select class="form-control form-control-sm">
+                <option>select an option</option>
+                <option>5-strongly agree</option>
+                <option>4-</option>
+                <option>3-</option>
+                <option>2-</option>
+                <option>1-strongly disagree</option>
+              </select>
+            </div>
+            <div class="question">
+              <h5>3. You prefer order to controlled chaos.</h5>
+              <select class="form-control form-control-sm">
+                <option>select an option</option>
+                <option>5-strongly agree</option>
+                <option>4-</option>
+                <option>3-</option>
+                <option>2-</option>
+                <option>1-strongly disagree</option>
+              </select>
+            </div>
+            <div class="question">
+              <h5>4. You have kids, or want them in the future.</h5>
+              <select class="form-control form-control-sm">
+                <option>select an option</option>
+                <option>5-strongly agree</option>
+                <option>4-</option>
+                <option>3-</option>
+                <option>2-</option>
+                <option>1-strongly disagree</option>
+              </select>
+            </div>
+            <div class="question">
+              <h5>
+                5. You're interested in finding an exclusive partner and
+                settling down.
+              </h5>
+              <select class="form-control form-control-sm">
+                <option>select an option</option>
+                <option>5-strongly agree</option>
+                <option>4-</option>
+                <option>3-</option>
+                <option>2-</option>
+                <option>1-strongly disagree</option>
+              </select>
+            </div>
+            <div class="question">
+              <h5>6. You prefer going out and socializing to staying in.</h5>
+              <select class="form-control form-control-sm">
+                <option>select an option</option>
+                <option>5-strongly agree</option>
+                <option>4-</option>
+                <option>3-</option>
+                <option>2-</option>
+                <option>1-strongly disagree</option>
+              </select>
+            </div>
+            <div class="question">
+              <h5>7. You are sensitive to the moods of others around you.</h5>
+              <select class="form-control form-control-sm">
+                <option>select an option</option>
+                <option>5-strongly agree</option>
+                <option>4-</option>
+                <option>3-</option>
+                <option>2-</option>
+                <option>1-strongly disagree</option>
+              </select>
+            </div>
+            <div class="question">
+              <h5>8. You prefer to listen rather than talk.</h5>
+              <select class="form-control form-control-sm">
+                <option>select an option</option>
+                <option>5-strongly agree</option>
+                <option>4-</option>
+                <option>3-</option>
+                <option>2-</option>
+                <option>1-strongly disagree</option>
+              </select>
+            </div>
+            <div class="question">
+              <h5>9. You're good at organizing social gatherings.</h5>
+              <select class="form-control form-control-sm">
+                <option>select an option</option>
+                <option>5-strongly agree</option>
+                <option>4-</option>
+                <option>3-</option>
+                <option>2-</option>
+                <option>1-strongly disagree</option>
+              </select>
+            </div>
+            <div class="question">
+              <h5>
+                10. You do already, or would like to own a pet in the future.
+              </h5>
+              <select class="form-control form-control-sm">
+                <option>select an option</option>
+                <option>5-strongly agree</option>
+                <option>4-</option>
+                <option>3-</option>
+                <option>2-</option>
+                <option>1-strongly disagree</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+      </div>
+    </div>
+  </body>
 </html>
+
+<!-- to do: need to make sure that the inputs are required in js...also, anything special that needs to happen for the type for the link to image? -->

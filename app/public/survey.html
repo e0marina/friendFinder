@@ -40,22 +40,23 @@
                 class="form-control"
                 id="name"
                 aria-describedby="name"
+                required
               />
             </div>
             <div class="form-group">
-              <label for="link-to-image">Link to photo image (required)</label>
-              <input type="text" class="form-control" id="link-to-image" />
+              <label for="photo">Link to photo image (required)</label>
+              <input type="text" class="form-control" id="photo" required />
             </div>
             <hr />
             <div class="question">
               <h5>1. You derive energy from being around other people.</h5>
-              <select class="form-control form-control-sm">
-                <option>select an option</option>
-                <option>5-strongly agree</option>
-                <option>4-</option>
-                <option>3-</option>
-                <option>2-</option>
-                <option>1-strongly disagree</option>
+              <select class="chosen-select" id="q1">
+                <option value="">select an option</option>
+                <option value="5">5-strongly agree</option>
+                <option value="4">4-</option>
+                <option value="3">3-</option>
+                <option value="2">2-</option>
+                <option value="1">1-strongly disagree</option>
               </select>
             </div>
             <br />
@@ -64,37 +65,37 @@
                 2. You think you'd like to live in your current city for the
                 next 10 years.
               </h5>
-              <select class="form-control form-control-sm">
-                <option>select an option</option>
-                <option>5-strongly agree</option>
-                <option>4-</option>
-                <option>3-</option>
-                <option>2-</option>
-                <option>1-strongly disagree</option>
+              <select class="chosen-select" id="q2">
+                <option value="">select an option</option>
+                <option value="5">5-strongly agree</option>
+                <option value="4">4-</option>
+                <option value="3">3-</option>
+                <option value="2">2-</option>
+                <option value="1">1-strongly disagree</option>
               </select>
             </div>
             <br />
             <div class="question">
               <h5>3. You prefer order to controlled chaos.</h5>
-              <select class="form-control form-control-sm">
-                <option>select an option</option>
-                <option>5-strongly agree</option>
-                <option>4-</option>
-                <option>3-</option>
-                <option>2-</option>
-                <option>1-strongly disagree</option>
+              <select class="chosen-select" id="q3">
+                <option value="">select an option</option>
+                <option value="5">5-strongly agree</option>
+                <option value="4">4-</option>
+                <option value="3">3-</option>
+                <option value="2">2-</option>
+                <option value="1">1-strongly disagree</option>
               </select>
             </div>
             <br />
             <div class="question">
               <h5>4. You have kids, or want them in the future.</h5>
-              <select class="form-control form-control-sm">
-                <option>select an option</option>
-                <option>5-strongly agree</option>
-                <option>4-</option>
-                <option>3-</option>
-                <option>2-</option>
-                <option>1-strongly disagree</option>
+              <select class="chosen-select" id="q4">
+                <option value="">select an option</option>
+                <option value="5">5-strongly agree</option>
+                <option value="4">4-</option>
+                <option value="3">3-</option>
+                <option value="2">2-</option>
+                <option value="1">1-strongly disagree</option>
               </select>
             </div>
             <br />
@@ -103,61 +104,61 @@
                 5. You're interested in finding an exclusive partner and
                 settling down.
               </h5>
-              <select class="form-control form-control-sm">
-                <option>select an option</option>
-                <option>5-strongly agree</option>
-                <option>4-</option>
-                <option>3-</option>
-                <option>2-</option>
-                <option>1-strongly disagree</option>
+              <select class="chosen-select" id="q5">
+                <option value="">select an option</option>
+                <option value="5">5-strongly agree</option>
+                <option value="4">4-</option>
+                <option value="3">3-</option>
+                <option value="2">2-</option>
+                <option value="1">1-strongly disagree</option>
               </select>
             </div>
             <br />
             <div class="question">
               <h5>6. You prefer going out and socializing to staying in.</h5>
-              <select class="form-control form-control-sm">
-                <option>select an option</option>
-                <option>5-strongly agree</option>
-                <option>4-</option>
-                <option>3-</option>
-                <option>2-</option>
-                <option>1-strongly disagree</option>
+              <select class="chosen-select" id="q6">
+                <option value="">select an option</option>
+                <option value="5">5-strongly agree</option>
+                <option value="4">4-</option>
+                <option value="3">3-</option>
+                <option value="2">2-</option>
+                <option value="1">1-strongly disagree</option>
               </select>
             </div>
             <br />
             <div class="question">
               <h5>7. You are sensitive to the moods of others around you.</h5>
-              <select class="form-control form-control-sm">
-                <option>select an option</option>
-                <option>5-strongly agree</option>
-                <option>4-</option>
-                <option>3-</option>
-                <option>2-</option>
-                <option>1-strongly disagree</option>
+              <select class="chosen-select" id="q7">
+                <option value="">select an option</option>
+                <option value="5">5-strongly agree</option>
+                <option value="4">4-</option>
+                <option value="3">3-</option>
+                <option value="2">2-</option>
+                <option value="1">1-strongly disagree</option>
               </select>
             </div>
             <br />
             <div class="question">
               <h5>8. You prefer to listen rather than talk.</h5>
-              <select class="form-control form-control-sm">
-                <option>select an option</option>
-                <option>5-strongly agree</option>
-                <option>4-</option>
-                <option>3-</option>
-                <option>2-</option>
-                <option>1-strongly disagree</option>
+              <select class="chosen-select" id="q8">
+                <option value="">select an option</option>
+                <option value="5">5-strongly agree</option>
+                <option value="4">4-</option>
+                <option value="3">3-</option>
+                <option value="2">2-</option>
+                <option value="1">1-strongly disagree</option>
               </select>
             </div>
             <br />
             <div class="question">
               <h5>9. You're good at organizing social gatherings.</h5>
-              <select class="form-control form-control-sm">
-                <option>select an option</option>
-                <option>5-strongly agree</option>
-                <option>4-</option>
-                <option>3-</option>
-                <option>2-</option>
-                <option>1-strongly disagree</option>
+              <select class="chosen-select" id="q9">
+                <option value="">select an option</option>
+                <option value="5">5-strongly agree</option>
+                <option value="4">4-</option>
+                <option value="3">3-</option>
+                <option value="2">2-</option>
+                <option value="1">1-strongly disagree</option>
               </select>
             </div>
             <br />
@@ -165,13 +166,13 @@
               <h5>
                 10. You do already, or would like to own a pet in the future.
               </h5>
-              <select class="form-control form-control-sm">
-                <option>select an option</option>
-                <option>5-strongly agree</option>
-                <option>4-</option>
-                <option>3-</option>
-                <option>2-</option>
-                <option>1-strongly disagree</option>
+              <select class="chosen-select" id="q10">
+                <option value="">select an option</option>
+                <option value="5">5-strongly agree</option>
+                <option value="4">4-</option>
+                <option value="3">3-</option>
+                <option value="2">2-</option>
+                <option value="1">1-strongly disagree</option>
               </select>
             </div>
           </form>
@@ -200,3 +201,46 @@
 </html>
 
 <!-- to do: need to make sure that the inputs are required in js...also, anything special that needs to happen for the type for the link to image? -->
+
+<script type="text/javascript">
+  //click handler for submit button
+  //grabs info and stores it into a newUser obj
+  $("#submit").on("click", function(event) {
+    event.preventDefault();
+    let newUser = {
+      name: $("#name")
+        .val()
+        .trim(),
+      photo: $("#photo")
+        .val()
+        .trim(),
+      scores: [
+        $("#q1").val(),
+        $("#q2").val(),
+        $("#q3").val(),
+        $("#q4").val(),
+        $("#q5").val(),
+        $("#q6").val(),
+        $("#q7").val(),
+        $("#q8").val(),
+        $("#q9").val(),
+        $("#q10").val()
+      ]
+    };
+
+    //     // AJAX post the data to the friends API.
+    //     $.post("/api/friends", userData, function(data) {
+
+    //       // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+    //       $("#match-name").text(data.name);
+    //       $("#match-img").attr("src", data.photo);
+
+    //       // Show the modal with the best match
+    //       $("#results-modal").modal("toggle");
+
+    //     });
+    //   } else {
+    //     alert("Please fill out all fields before submitting!");
+    //   }
+  });
+</script>

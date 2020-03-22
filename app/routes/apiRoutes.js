@@ -15,6 +15,23 @@ module.exports = function(app) {
 
   app.post("/friends", function(request, response) {
     friendsData.push(request.body);
+    for (let i = 0; i < friendsData.length; i++) {
+      console.log(friendsData[i].name);
+      console.log(friendsData[i].scores);
+    }
+    // console.log(request.body);//can get just submitted info off of this, but need users already stored
+    // console.log(friendsData[0]);
     response.json(true);
   });
 };
+
+// - Convert each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`).
+//loop through the array of objects, pulling off the scores...then convert the scores to an array of nums?
+
+// - With that done, compare the difference between current user's scores against those from other users, question by question. Add up the differences to calculate the `totalDifference`.
+//   - Example:
+//     - User 1: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`
+//     - User 2: `[3, 2, 6, 4, 5, 1, 2, 5, 4, 1]`
+//     - Total Difference: **2 + 1 + 2 =** **_5_**
+// - Remember to use the absolute value of the differences. Put another way: no negative solutions! Your app should calculate both `5-3` and `3-5` as `2`, and so on.
+// - The closest match will be the user with the least amount of difference.

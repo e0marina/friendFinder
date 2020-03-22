@@ -9,18 +9,30 @@ var friendsData = require("../data/friends");
 
 //ROUTING
 module.exports = function(app) {
+  //loop through friendsData and get the friends already in the array's scores
+  var pastFriendsScoresArr = [];
+  function pastFriends() {
+    for (let i = 0; i < friendsData.length; i++) {
+      //   console.log(friendsData[i].scores);
+      console.log("_____________________");
+
+      pastFriendsScoresArr.push(friendsData[i].scores);
+    }
+    console.log(pastFriendsScoresArr); //now an array of arrays ughhhh
+  }
+  pastFriends();
+  //GET
   app.get("/friends", function(request, response) {
     response.json(friendsData);
   });
-
+  //POST
+  var currentScoreArr = [];
   app.post("/friends", function(request, response) {
     friendsData.push(request.body);
-    for (let i = 0; i < friendsData.length; i++) {
-      console.log(friendsData[i].name);
-      console.log(friendsData[i].scores);
-    }
-    // console.log(request.body);//can get just submitted info off of this, but need users already stored
-    // console.log(friendsData[0]);
+
+    // console.log(request.body.scores); //can get just submitted info off of this, but need users already stored
+    var currentScoreArr = request.body.scores; //variable holding current/submitted scores
+
     response.json(true);
   });
 };

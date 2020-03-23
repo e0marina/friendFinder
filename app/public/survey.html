@@ -236,6 +236,8 @@
           src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
           alt=""
         />
+        <h2>Total Score: <span id="totalScore"></span></h2>
+        <h2>Perfect Match Total Score: <span id="pMtotalScore"></span></h2>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -296,8 +298,13 @@
       // AJAX post the data to the friends API.
       $.post("/friends", newUser, function(data) {
         // // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-        $("#match-name").text(data.name);
-        $("#match-img").attr("src", data.photo);
+        console.log(data);
+
+        $("#match-name").text(data.userData.name);
+        $("#match-img").attr("src", data.userData.photo);
+        $("#totalScore").text(data.totalscore);
+        $("#pMtotalScore").text(data.currentUserScore);
+
         // Show the modal with the best match
         $("#results-modal").modal("toggle");
         // Clear the form when submitting

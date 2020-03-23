@@ -236,8 +236,8 @@
           src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
           alt=""
         />
-        <h2>Total Score: <span id="totalScore"></span></h2>
-        <h2>Perfect Match Total Score: <span id="pMtotalScore"></span></h2>
+        <!-- <h2>Total Score: <span id="totalScore"></span></h2>
+        <h2>Perfect Match Total Score: <span id="pMtotalScore"></span></h2> -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -247,8 +247,6 @@
     </div>
   </div>
 </div>
-
-<!-- to do: need to make sure that the inputs are required in js...also, anything special that needs to happen for the type for the link to image? -->
 
 <script type="text/javascript">
   //click handler for submit button
@@ -302,16 +300,16 @@
 
         $("#match-name").text(data.userData.name);
         $("#match-img").attr("src", data.userData.photo);
-        $("#totalScore").text(data.totalscore);
-        $("#pMtotalScore").text(data.currentUserScore);
+        // $("#totalScore").text(data.totalscore);
+        // $("#pMtotalScore").text(data.currentUserScore);
 
         // Show the modal with the best match
         $("#results-modal").modal("toggle");
         // Clear the form when submitting
-        // $("#reserve-name").val("");
-        // $("#name").val("");
-        // $("#photo").val("");
-        // $(".chosen-select").val("");
+        $("#reserve-name").val("");
+        $("#name").val("");
+        $("#photo").val("");
+        $(".chosen-select").val("");
       });
     } else {
       alert("Please fill out all fields before submitting!");
